@@ -32,3 +32,32 @@ In order to submit the assignment, do the following:
 
 
 May your servo drives be warm, and your hydraulic fluid never leak.
+
+# How to run
+
+## Installation of required python packages
+
+With python3 (tested with python3.8) install required packages with
+
+`pip install -r requirements.txt`
+
+(You probably want to use a virtual environment for this)
+
+## Running jupyter notebook in a browser
+
+`jupyter-notebook analysis.ipynb`
+
+## Running jupyter notebook in VSCode
+
+Just open the notebook and select the correct kernel (virtual environment) in the upper right corner
+
+## Matplotlib backend
+
+In the second cell you can set the backend for matplot lib.
+If you're working on a local machine I suggest you use
+`%matplotlib qt`
+
+Of course, if you'd like to use a different one, feel free to do so!
+
+When using the remote-ssh functionality of VSCode, you can use
+`%matplotlib ipympl` for interactive plots within VSCode
